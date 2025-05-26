@@ -1,9 +1,5 @@
-class Solution(object):
-    def romanToInt(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+class Solution:
+    def romanToInt(self, s: str) -> int:
         roman = {
             'I' : 1,
             'V' : 5,
@@ -22,4 +18,3 @@ class Solution(object):
                 sum -= roman[s[i]]
 
         return sum + roman[s[-1]]
-        

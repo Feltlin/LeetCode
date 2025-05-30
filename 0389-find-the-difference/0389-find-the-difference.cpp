@@ -1,16 +1,9 @@
 class Solution {
 public:
     char findTheDifference(string s, string t) {
-        std::unordered_map<char, int> count;
-        for(char i : t){
-            ++count[i];
+        for(int i = 0; i < s.length(); ++i){
+            t[i + 1] += t[i] - s[i];
         }
-        for(char i : s){
-            --count[i];
-            if(count[i] == 0){
-                count.erase(i);
-            }
-        }
-        return count.begin()->first;
+        return t[t.length() - 1];
     }
 };

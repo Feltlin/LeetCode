@@ -13,7 +13,7 @@ class Solution {
         ListNode l3 = new ListNode();
         ListNode ptr = l3;
         int digit = 0, carry = 0;
-        while(l1!= null || l2!= null || carry != 0){
+        while(l1 != null || l2 != null || carry != 0){
             digit = carry;
             if(l1 != null){
                 digit += l1.val;

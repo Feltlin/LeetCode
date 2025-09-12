@@ -20,27 +20,5 @@ public:
             }
         }
         return maxGap;
-
-    //     int maxGap = 0;
-    //     int gap = 0;
-    //     int findOne = 0;
-    //     while(n > 0){
-    //         int remainder = n % 2;
-    //         n /= 2;
-    //         if(findOne == 1){
-    //             gap += 1;
-    //         }
-    //         if(remainder){
-    //             findOne += 1;
-    //         }
-    //         if(findOne == 2){
-    //             findOne = 1;
-    //             if(gap > maxGap){
-    //                 maxGap = gap;
-    //                 gap = 0;
-    //             }
-    //         }
-    //     }
-    //     return maxGap;
     }
 };
